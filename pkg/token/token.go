@@ -62,4 +62,7 @@ const (
 	RBRACE
 	LBRACK
 	RBRACK
+
+	// MUST BE FINAL VALUE
+	MAX_TYPE 
 )

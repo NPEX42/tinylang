@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	token "tinylang/pkg"
+	"tinylang/pkg/token"
 )
 
 func main() {
