@@ -23,6 +23,12 @@ func New(l *lexer.Lexer) *Parser {
 	return p
 }
 
+// func (p *Parser) Program() ast.Program {
+// 	for (p.l.HasNext()) {
+
+// 	}
+// }
+
 func (p *Parser) matchCurrent(tt token.TokenType) bool {
 	return p.CurrToken.Type == tt;
 }
