@@ -2,20 +2,21 @@ package main
 
 import (
 	"fmt"
-	"tinylang/pkg/token"
+	"os"
+	"tinylang/cmd/lex"
 )
 
 func main() {
-	filepath := "Hello.tl"
-	tok := token.Token{
-		Type: token.ASSIGN,
-		Lexeme: "=",
-		Start: 0,
-		End: 1,
-		Line: 1,
-		Column: 1,
-		FilePath: &filepath,
+
+	if len(os.Args) < 2 {
+		fmt.Printf("Usage: %s <cmd>\ncmds:\n", os.Args[0]);
+		fmt.Println(lex.Usage())
+		os.Exit(1)
 	}
 
-	fmt.Println(tok.String())
+	switch os.Args[1] {
+		
+		case "lex":
+			lex.Lex()
+	}
 }

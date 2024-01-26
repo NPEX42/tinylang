@@ -1,0 +1,281 @@
+[
+	{
+		"type": 23,
+		"lexeme": "println",
+		"start": 0,
+		"end": 7,
+		"line": 1,
+		"column": 1,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 4,
+		"lexeme": "Hello, World",
+		"start": 8,
+		"end": 22,
+		"line": 1,
+		"column": 9,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 30,
+		"lexeme": ";",
+		"start": 22,
+		"end": 23,
+		"line": 1,
+		"column": 23,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 0,
+		"lexeme": "",
+		"start": 0,
+		"end": 0,
+		"line": 0,
+		"column": 0,
+		"filepath": null
+	},
+	{
+		"type": 6,
+		"lexeme": "name",
+		"start": 71,
+		"end": 75,
+		"line": 3,
+		"column": 2,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 17,
+		"lexeme": ":=",
+		"start": 76,
+		"end": 78,
+		"line": 3,
+		"column": 7,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 4,
+		"lexeme": "Jason",
+		"start": 79,
+		"end": 86,
+		"line": 3,
+		"column": 10,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 30,
+		"lexeme": ";",
+		"start": 86,
+		"end": 87,
+		"line": 3,
+		"column": 17,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 6,
+		"lexeme": "firstChar",
+		"start": 88,
+		"end": 97,
+		"line": 4,
+		"column": 2,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 17,
+		"lexeme": ":=",
+		"start": 98,
+		"end": 100,
+		"line": 4,
+		"column": 12,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 6,
+		"lexeme": "name",
+		"start": 101,
+		"end": 105,
+		"line": 4,
+		"column": 15,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 28,
+		"lexeme": "[",
+		"start": 105,
+		"end": 106,
+		"line": 4,
+		"column": 19,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 3,
+		"lexeme": "0",
+		"start": 106,
+		"end": 107,
+		"line": 4,
+		"column": 20,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 29,
+		"lexeme": "]",
+		"start": 107,
+		"end": 108,
+		"line": 4,
+		"column": 21,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 30,
+		"lexeme": ";",
+		"start": 108,
+		"end": 109,
+		"line": 4,
+		"column": 22,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 19,
+		"lexeme": "if",
+		"start": 111,
+		"end": 113,
+		"line": 6,
+		"column": 2,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 6,
+		"lexeme": "firstChar",
+		"start": 114,
+		"end": 123,
+		"line": 6,
+		"column": 5,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 14,
+		"lexeme": "\u003e=",
+		"start": 124,
+		"end": 126,
+		"line": 6,
+		"column": 15,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 5,
+		"lexeme": "'a'",
+		"start": 127,
+		"end": 130,
+		"line": 6,
+		"column": 18,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 26,
+		"lexeme": "{",
+		"start": 131,
+		"end": 132,
+		"line": 6,
+		"column": 22,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 23,
+		"lexeme": "println",
+		"start": 137,
+		"end": 144,
+		"line": 7,
+		"column": 6,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 4,
+		"lexeme": "Rude.",
+		"start": 145,
+		"end": 152,
+		"line": 7,
+		"column": 14,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 27,
+		"lexeme": "}",
+		"start": 153,
+		"end": 154,
+		"line": 8,
+		"column": 2,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 20,
+		"lexeme": "else",
+		"start": 155,
+		"end": 159,
+		"line": 8,
+		"column": 4,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 26,
+		"lexeme": "{",
+		"start": 160,
+		"end": 161,
+		"line": 8,
+		"column": 9,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 23,
+		"lexeme": "println",
+		"start": 166,
+		"end": 173,
+		"line": 9,
+		"column": 6,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 4,
+		"lexeme": "Hello, ",
+		"start": 174,
+		"end": 183,
+		"line": 9,
+		"column": 14,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 7,
+		"lexeme": "+",
+		"start": 184,
+		"end": 185,
+		"line": 9,
+		"column": 24,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 6,
+		"lexeme": "name",
+		"start": 186,
+		"end": 190,
+		"line": 9,
+		"column": 26,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 27,
+		"lexeme": "}",
+		"start": 191,
+		"end": 192,
+		"line": 10,
+		"column": 2,
+		"filepath": "hello.tl"
+	},
+	{
+		"type": 2,
+		"lexeme": "",
+		"start": 192,
+		"end": 192,
+		"line": 10,
+		"column": 3,
+		"filepath": "hello.tl"
+	}
+]

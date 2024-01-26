@@ -1,17 +1,19 @@
 package token
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type TokenType int
 
 type Token struct {
-	Type		TokenType
-	Lexeme		string
-	Start		int
-	End			int
-	Line		int
-	Column		int
-	FilePath	*string
+	Type		TokenType	`json:"type"`
+	Lexeme		string		`json:"lexeme"`
+	Start		int			`json:"start"`
+	End			int			`json:"end"`
+	Line		int			`json:"line"`
+	Column		int			`json:"column"`
+	FilePath	*string		`json:"filepath"`
 }
 
 func (t *Token) String() string {
@@ -23,18 +25,20 @@ func (t *Token) String() string {
 		"%d %q %d..%d (%s:%d:%d)",
 		t.Type,
 		t.Lexeme,
-		t.Start, t.Column,
+		t.Start, t.End,
 		filepath,
 		t.Line, t.Column,
 	)
 }
 
 const (
-	ILLEGAL TokenType = iota
+	_ TokenType = iota
+	ILLEGAL
 	EOI
 
 	INT
 	STRING
+	CHAR
 	IDENTIFIER
 
 	PLUS
@@ -48,13 +52,14 @@ const (
 	EQUAL
 
 	ASSIGN
+	DECLARE
 
-	VAR
 	FN
 	IF
 	ELSE
 	LOOP
 	RETURN
+	PRINTLN
 
 	LPAREN
 	RPAREN
@@ -62,7 +67,28 @@ const (
 	RBRACE
 	LBRACK
 	RBRACK
+	SEMICOLON
+	COMMA
+	COLON
 
 	// MUST BE FINAL VALUE
 	MAX_TYPE 
 )
+
+
+var keywords = map[string] TokenType {
+	"println": 	PRINTLN,
+	"fn": 		FN,
+	"if": 		IF,
+	"else": 	ELSE,
+	"loop": 	LOOP,
+	"return": 	RETURN,
+} 
+
+func LookupKeyword(ident string) TokenType {
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENTIFIER
+}
+
